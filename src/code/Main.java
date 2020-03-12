@@ -44,6 +44,18 @@ public class Main {
 		System.out.println(String.format("두 좌표간의 직선거리는 %.2f입니다.", distance2));
 		// 출력 : 두 좌표간의 직선거리는 16.97입니다.		
 		
+		
+//		< Math.random() - 랜덤값 구하기 >
+		// 실행될 때마다 0 ~ 1의 실수 중 랜덤값이 나오는 기능
+		// 문제. 1부터 45까지의 정수 중 하나를 랜덤으로 출력
+		// 0 <= 랜덤값 < 1
+		// -> 0*45+1 <= 랜덤값*45+1 < 1*45+1
+		// -> 1 <= (int) 랜덤값*45+1 < 46  
+		// -> 1 ~ 45.999의 정수 중 랜덤값
+		int randomResult = (int) (Math.random() * 45 + 1);
+		System.out.println(String.format("랜덤값 : %d", randomResult));
+		// 출력 : 랜덤값 : n
+		
 	}
 
 }
